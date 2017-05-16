@@ -3,10 +3,10 @@
 
 # TEAM
 
-    <Phiphou> -- <author> -- <@__phiphou__>
+    andparsons
 
 # TECHNOLOGY COLOPHON
 
     VueJs, Vue-resource, Vue-router
-    Webpack, ES6, CSS3, SASS, HTML5
+    Webpack, ES6, CSS3, SCSS, HTML5
     Karma, Mocha, Chai, Nightwatch, Coverage

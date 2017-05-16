@@ -4,11 +4,12 @@
 // chai.use(chaiAsPromised)
 import Vue from 'vue'
 import Router from 'vue-router'
-Vue.use(Router)
+import Resource from 'vue-resource'
 import Hello from '../../src/app/components/PeopleList/PeopleList'
-Vue.use(require('vue-resource'))
-
 import router from '../../src/app/router'
+Vue.use(Router)
+Vue.use(Resource)
+
 const mocks = require('../mocks/db.json')
 
 describe('Router', () => {

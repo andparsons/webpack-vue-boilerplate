@@ -11,13 +11,13 @@ module.exports = {
   globals_path: 'config/nightwatch/globals.js',
   selenium: {
     start_process: !process.env.CIRCLE_ENV,
-    server_path: './node_modules/selenium-standalone/.selenium/selenium-server/3.0.1-server.jar',
+    server_path: `./node_modules/selenium-standalone/.selenium/selenium-server/3.4.0-server.jar`,
     log_path: `${projectRoot}/reports/e2e/`,
     host: '127.0.0.1',
     port: 4444,
     silent: true,
     cli_args: {
-      'webdriver.chrome.driver': './node_modules/selenium-standalone/.selenium/chromedriver/2.28-x64-chromedriver',
+      'webdriver.chrome.driver': './node_modules/selenium-standalone/.selenium/chromedriver/2.29-x64-chromedriver',
       'webdriver.gecko.driver': require('geckodriver').path,
       'webdriver.ie.driver': require('iedriver').path
     }

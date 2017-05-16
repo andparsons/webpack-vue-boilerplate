@@ -13,7 +13,7 @@ const Parent = {
 }
 
 export default new Router({
-  mode: 'hash',
+  mode: 'history',
   routes: [{
     path: '/home',
     component: require('../components/Home/Home')

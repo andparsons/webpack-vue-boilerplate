@@ -1,0 +1,124 @@
+/* We can import any classic CSS from anywhere */
+@import 'style.css';
+@import 'typography';
+@import 'radio_buttons';
+@import 'menu';
+
+html {
+  height: 100%;
+}
+body {
+  height: 100%;
+  margin: 0;
+  min-height: 100%;
+  background: #000000;
+  color: #FFFFFF;
+  position: relative;
+}
+#header {
+  height: 100px;
+  width: 100%;
+  top: 0;
+  left: 0;
+  background: #485151;
+  position: fixed;
+}
+#footer {
+  height: 30px;
+  width: 100%;
+  bottom: 0;
+  display: flex;
+  left: 0;
+  color: white;
+  background: #485151;
+  position: fixed;
+  border-bottom-width: 0;
+}
+#content {
+  height: 100%;
+  padding: 0 0;
+  > div {
+    padding: 100px 0;
+  }
+}
+h1.title {
+  font-size: 28px;
+  margin: auto 0;
+}
+.subh {
+  display: inline-flex;
+}
+.header {
+  display: block;
+  z-index: 10000;
+  // padding-left: 20px;
+  background-color: #181b1b;
+  // border-bottom: 2px solid #737373;
+}
+.footer {
+  padding: 7px 0 0 0;
+  font-weight: bold;
+  text-align: center;
+  border-bottom: solid 10px #181b1b;
+  border-top: solid 2px #606b6c;
+  background-color: #181b1b;
+  color: #cfcfcf;
+  h5 {
+    font-size: 14px;
+    margin: 0;
+    width: 100%;
+    a {
+      text-decoration: none;
+      &.vuejs_link {
+        color: #42b883;
+      }
+      &.webpack_link {
+        color: #799edf;
+      }
+    }
+  }
+}
+h1#logo {
+  margin-left: 10px;
+}
+#logo a {
+  display: block;
+  width: 74px;
+  height: 64px;
+  background: url("../assets/img/logo.png") no-repeat left top;
+  background-size: contain;
+  span {
+    display: none;
+  }
+}
+.router-view {
+  // margin: 15px
+  margin-top: 60px;
+  margin-left: 15px;
+  margin-right: 15px;
+}
+
+.fade-enter-active, .fade-leave-active {
+  transition: opacity .2s ease;
+}
+.fade-enter, .fade-leave-active {
+  transition: opacity .2s ease;
+  opacity: 0;
+}
+@media only screen and (min-width: 1064px) {
+  h1.title {
+    font-size: 24px;
+  }
+  .router-view {
+    margin-top: 60px;
+  }
+  #footer {
+    height: 30px;
+    display: block;
+  }
+  .footer {
+    h5 {
+      font-size: 14px;
+    }
+  }
+}

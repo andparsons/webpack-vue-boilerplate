@@ -120,7 +120,7 @@ module.exports = {
           })
         ],
         sassLoader: {
-          includePaths: [path.resolve(__dirname, 'src', 'sass')]
+          includePaths: [path.resolve(__dirname, 'src', 'scss')]
         }
       }
     }),

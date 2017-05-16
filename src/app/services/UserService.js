@@ -1,4 +1,7 @@
 import Vue from 'vue'
+import Resource from 'vue-resource'
+
+Vue.use(Resource)
 
 export default {
   API_endPoint: process.env.API_endPoint,
